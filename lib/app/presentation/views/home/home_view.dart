@@ -5,8 +5,24 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Home')),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: const Icon(
+          Icons.apple,
+          color: Colors.black87,
+        ),
+        actions: const [
+          CircleAvatar(
+            child: Image(
+              image: AssetImage('assets/images/me.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ],
+        elevation: 0,
+      ),
+      body: const Center(child: Text('Home')),
     );
   }
 }
