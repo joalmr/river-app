@@ -4,7 +4,7 @@ final bcpAmex = [
   //dinersClub
   CreditCardModel(
     bank: "BCP",
-    brand: "visa",
+    brand: "amex",
     color: 0xFFB3B3B3,
     type: "",
   )

@@ -7,7 +7,7 @@ class CreditCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final creditCards = myCreditCards[0];
+    final creditCards = myCreditCards[2];
     return Container(
       height: 184,
       width: 200,
