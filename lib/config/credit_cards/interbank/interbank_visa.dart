@@ -1,7 +1,13 @@
-import 'package:river_app/config/credit_card_model.dart';
+import 'package:river_app/config/credit_cards/credit_card_model.dart';
 
-final myCreditCards = [
+final interbankVisa = [
   //visa interbank
+  CreditCardModel(
+    bank: "Interbank",
+    brand: "visa",
+    color: 0xFF02C04F,
+    type: "Access",
+  ),
   CreditCardModel(
     bank: "Interbank",
     brand: "visa",

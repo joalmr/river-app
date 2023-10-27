@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:river_app/config/credit_card_data.dart';
+import 'package:river_app/config/credit_cards/credit_card_my.dart';
 
 class CreditCardWidget extends StatelessWidget {
   const CreditCardWidget({super.key});
