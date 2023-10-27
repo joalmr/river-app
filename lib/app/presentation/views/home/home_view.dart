@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:river_app/app/presentation/views/home/credit_card_widget.dart';
 
 class HomeView extends ConsumerWidget {
   const HomeView({super.key});
@@ -75,49 +75,10 @@ class HomeView extends ConsumerWidget {
                 ),
               ),
             ),
-            Positioned(
+            const Positioned(
               top: 132,
               right: 0,
-              child: Container(
-                height: 184,
-                width: 200,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                  ),
-                  color: Color.fromARGB(255, 32, 32, 32),
-                ),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 16,
-                      left: 24,
-                      child: SvgPicture.asset(
-                        'assets/images/mastercard.svg',
-                        height: 42,
-                      ),
-                    ),
-                    const Positioned(
-                      bottom: 16,
-                      left: 24,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Black Card',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          Text(
-                            'BBVA',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: CreditCardWidget(),
             ),
           ],
         ),
