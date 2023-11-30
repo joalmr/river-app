@@ -35,7 +35,7 @@ final interbankAmex = [
   CreditCardModel(
     bank: "Interbank",
     brand: "amex",
-    color: 0xFFD7DADE, //818486
+    color: 0xFFC0C6CB, //818486
     type: "The Platinum Card",
   )
 ];

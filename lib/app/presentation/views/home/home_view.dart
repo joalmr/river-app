@@ -67,7 +67,7 @@ class HomeView extends ConsumerWidget {
               top: 72,
               left: 24,
               child: Text(
-                'Hi, Mark',
+                'Hola, Alonso',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
